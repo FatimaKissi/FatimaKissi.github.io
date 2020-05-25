@@ -3,3 +3,9 @@ body{
     font-family:'Times New Roman';
     text-align: center;
 }
+.h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+    font-family: 'Trebuchet MS';
+}
