@@ -10,7 +10,7 @@ body{
     font-family: 'Trebuchet MS';
 }
 .topnav {
-    background-color: #333;
+    background-color: rgb(97, 20, 33);
     overflow: hidden;
   }
   
@@ -32,6 +32,6 @@ body{
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #4CAF50;
+    background-color: rgb(223, 172, 181);
     color: white;
   }
