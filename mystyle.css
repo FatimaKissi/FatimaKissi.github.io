@@ -9,6 +9,25 @@ body{
     font-size: medium;
     font-family: 'Trebuchet MS';
 }
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -63,7 +82,7 @@ body{
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  padding: 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
