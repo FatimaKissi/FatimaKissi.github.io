@@ -12,7 +12,7 @@ body{
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-  }
+    box-sizing: border-box;
 }
 /* Create three equal columns that floats next to each other */
 .column {
@@ -89,4 +89,5 @@ body{
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
 }
