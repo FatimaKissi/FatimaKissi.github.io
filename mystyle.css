@@ -2,12 +2,65 @@ body{
     background-color: rgb(250, 248, 245);
     font-family:'New Times Roman';
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 .h2{
     text-align: center;
     font-weight: 300;
     font-size: medium;
     font-family: 'Trebuchet MS';
+}
+.container{
+width: 800px;
+margin: 50px auto 0;
+display: table;
+box-sizing: border-box;
+}
+.row{
+  margin: 10px 0;
+  transition: 5%;
+}
+.column{
+  background-color: plum;
+  display: table-cell;
+  padding: 10px;
+  width: fit-content;
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+  border-right: 10px pink;
+  border-left: 10px pink;
+}
+.row:nth-child(1).column:nth-child(1)
+{
+  background-color: salmon;
+}
+.row:nth-child(2).column:nth-child(2)
+{
+  background-color: rgb(174, 220, 238);
+}
+.row:nth-child(3).column:nth-child(3)
+{
+  background-color: rgb(250, 114, 114);
+}
+@media (max-width:800px)
+{
+  .container{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  .column{
+    width: 100%;
+    display: block;
+    margin: 10px;
+    border: none;
+    box-sizing: border-box;
+  }
+  .row{
+    margin: 20px;
+  }
 }
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -31,6 +84,7 @@ body{
   display: block;
   transition: 0.3s;
 }
+
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
