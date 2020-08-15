@@ -11,56 +11,34 @@ body{
     font-size: medium;
     font-family: 'Trebuchet MS';
 }
-.container{
-width: 800px;
-margin: 50px auto 0;
-display: table;
-box-sizing: border-box;
-}
-.row{
-  margin: 10px 0;
-  transition: 5%;
-}
-.column{
-  background-color: plum;
-  display: table-cell;
-  padding: 10px;
-  width: 400px;
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
   text-align: center;
-  color: black;
-  vertical-align: middle;
-  border-right: 10px pink;
-  border-left: 10px pink;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
 }
-.row:nth-child(1).column:nth-child(1)
-{
-  background-color: salmon;
+
+.containerTab {
+  padding: 20px;
+  color: white;
 }
-.row:nth-child(2).column:nth-child(2)
-{
-  background-color: rgb(174, 220, 238);
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.row:nth-child(3).column:nth-child(3)
-{
-  background-color: rgb(202, 135, 135);
-}
-@media (max-width:800px)
-{
-  .container{
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-  }
-  .column{
-    width: 100%;
-    display: block;
-    margin: 10px;
-    border: none;
-    box-sizing: border-box;
-  }
-  .row{
-    margin: 20px;
-  }
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
 .sidebar {
   height: 100%; /* 100% Full-height */
