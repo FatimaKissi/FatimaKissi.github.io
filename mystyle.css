@@ -13,8 +13,8 @@ body{
 }
 .column {
   float: left;
-  width: 20%;
-  padding: 20px;
+  width: 10%;
+  padding: 10px;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
